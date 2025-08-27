@@ -11,6 +11,6 @@ class PedidoAdmin(admin.ModelAdmin):
     search_fields = ('usuario__username', 'id')  # Permite buscar por nome de usuário ou ID do pedido
     inlines = [ItemPedidoInline]
 
-# Registrar modelos no painel do Django Admin
+
 admin.site.register(Pedido, PedidoAdmin)
 admin.site.register(ItemPedido) # Pode ser registrado, mas geralmente é gerenciado via InlineAdmin

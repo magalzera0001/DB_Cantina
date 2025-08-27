@@ -4,4 +4,4 @@ from .models import Usuario
 
 @admin.register(Usuario)
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ('turma',)
+    list_display = ("user", "full_name", "is_active", "date_joined",)
